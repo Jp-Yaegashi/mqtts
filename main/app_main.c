@@ -129,6 +129,7 @@ static void mqtt_app_start(void)
         .password = "nc_counter_mqtt",
         .port = 8883,
         .keepalive = 40,
+        .cert_pem = (const char *)mqtt_eclipseprojects_io_pem_start,
     };
 
     ESP_LOGI(TAG, "[APP] Free memory: %d bytes", esp_get_free_heap_size());
